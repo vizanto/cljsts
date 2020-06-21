@@ -1,0 +1,18 @@
+;; shadow-cljs configuration
+{:source-paths ["src"]
+
+ :dependencies [[metosin/malli "0.0.1-20200404.091302-14"]
+                [net.cgrand/macrovich "0.2.1"]
+                [ilk "1.0.0"]
+                [cider/cider-nrepl "0.24.0"]
+                [org.clojure/tools.macro "0.1.2"]]
+
+ :builds {:lib
+          {:target :node-library
+           :compiler-options
+            {:optimizations :advanced
+             :reader-features #{:node}}
+           :exports-var data/exports
+           ;:js-options {:js-package-dirs ["./lib/node_modules"]}
+           ;:output-dir "lib"
+           :output-to "lib/index.js"}}}

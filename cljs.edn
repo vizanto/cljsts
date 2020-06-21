@@ -1,0 +1,8 @@
+{:main data
+ :output-dir "out"
+ :output-to "out/index.js"
+;  :source-map "index.js.map"
+;  :optimizations :advanced ;:none ; simple and advanced currently do not work with :bundle target
+ :pretty-print true
+ :repl-env :node
+ :target :bundle}

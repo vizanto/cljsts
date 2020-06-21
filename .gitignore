@@ -1,0 +1,14 @@
+# Compiler caches
+.shadow-cljs
+.cpcache
+
+# Yarn
+.cache
+
+# OS
+.DS_Store
+.tmp
+
+# Dependency directory
+node_modules
+.bin
